@@ -1,16 +1,16 @@
-# chart-repo-template
+# basic-webservice-chart
 
-a template for a chart repo
+a basic chart to deploy a webservice
 
 ## usage
-
-* clone this repo (include branches)
-* double check gh-pages [deployment is configured](../../settings/pages)
-* replace `README.md`
-* add chart files to `charts/<mychart>/`
-  * `Charts.yaml`
-  * `values.yaml`
-  * `templates/...yaml`
-  * `ci/values.yaml` (if ci test needs proper values)
-* await autorelease of chart
-* use it ...
+```Shell
+APP=mywebservice
+CHART=mywebservice
+NAMESPACE=mywebservice
+REPO_NAME=basic-webservice-chart
+REPO_URL=https://honigpferd.github.io/basic-webservice-chart
+helm repo add $REPO_NAME $REPO_URL
+helm repo update
+helm upgrade --install $APP $REPO_NAME/$CHART \
+    --namespace $NAMESPACE --create-namespace
+```
