@@ -2,6 +2,19 @@ apiVersion: v1
 entries:
   mywebservice:
   - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-05-31T13:43:01.198198427Z"
+    description: A Helm chart for Kubernetes
+    digest: f348bd80235b15c2e700d821754ec988b4b44d8412e7daf7c05f1e4f2a68c242
+    maintainers:
+    - email: email@example.com
+      name: Name
+    name: mywebservice
+    type: application
+    urls:
+    - https://github.com/honigpferd/basic-webservice-chart/releases/download/mywebservice-0.0.2/mywebservice-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
     appVersion: 1.22.0
     created: "2022-05-31T12:16:57.012954155Z"
     description: A Helm chart for Kubernetes
@@ -14,4 +27,4 @@ entries:
     urls:
     - https://github.com/honigpferd/basic-webservice-chart/releases/download/mywebservice-0.0.1/mywebservice-0.0.1.tgz
     version: 0.0.1
-generated: "2022-05-31T12:16:57.012959455Z"
+generated: "2022-05-31T13:43:01.198205928Z"
